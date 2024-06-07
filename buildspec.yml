@@ -5,7 +5,18 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
+
   build:
     commands:
       - echo "Building application..."
-      - npm run build  # Or your custom build command
+      - npm run build  # This will execute the script defined in your package.json (or a placeholder if no script exists)
+
+  post_build:
+    commands:
+      - echo "Build completed!"  # Optional step to indicate build completion
+
+artifacts:
+  # Since you don't have specific build artifacts yet, you can exclude this section for now.
+  # If you have build artifacts (e.g., bundled files), uncomment and customize this section.
+  # files:
+  #   - build/*  # Example: Include all files in the "build" directory
