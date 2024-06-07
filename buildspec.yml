@@ -15,8 +15,4 @@ phases:
     commands:
       - echo "Build completed!"  # Optional step to indicate build completion
 
-artifacts:
-  # Since you don't have specific build artifacts yet, you can exclude this section for now.
-  # If you have build artifacts (e.g., bundled files), uncomment and customize this section.
-  # files:
-  #   - build/*  # Example: Include all files in the "build" directory
+
