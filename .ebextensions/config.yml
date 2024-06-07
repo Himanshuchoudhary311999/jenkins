@@ -1,0 +1,17 @@
+files:
+  "/opt/elasticbeanstalk/hooks/appdeploy/pre/01a_git.sh":
+    mode: "000755"
+    owner: root
+    group: root
+    content: |
+      #!/bin/bash
+      cd /var/app/current
+      git pull origin master
+      npm install
+      npm run build || echo "No build script"
+
+container_commands:
+  01_install_dependencies:
+    command: "npm install"
+  02_start_app:
+    command: "npm start"
