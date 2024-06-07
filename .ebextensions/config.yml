@@ -15,3 +15,6 @@ container_commands:
     command: "npm install"
   02_start_app:
     command: "npm start"
+
+
+
